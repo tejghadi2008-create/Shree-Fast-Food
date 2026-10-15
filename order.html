@@ -1,0 +1,214 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order | Shree Fast Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Order Your Favourite Food</h1>
+    <p>Choose your favourite food and drinks.</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="order.html">Order</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main class="content">
+    <h2>Popular Choices</h2>
+
+    <div class="food-list">
+
+        <div class="food-item">
+            <img src="images/burger.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <p>Fresh and tasty.</p>
+            <button class="btn" onclick="placeOrder('Burger')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/pizza.jpg" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>Cheesy and delicious.</p>
+            <button class="btn" onclick="placeOrder('Pizza')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/mojito.jpg" alt="Mojito">
+            <h3>Mojito</h3>
+            <p>Cool and refreshing.</p>
+            <button class="btn" onclick="placeOrder('Mojito')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/cold-coffee.jpg" alt="Cold Coffee">
+            <h3>Cold Coffee</h3>
+            <p>Refreshing cold coffee.</p>
+            <button class="btn" onclick="placeOrder('Cold Coffee')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/sandwich.jpg" alt="Sandwich">
+            <h3>Sandwich</h3>
+            <p>Fresh and delicious.</p>
+            <button class="btn" onclick="placeOrder('Sandwich')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/frankie.jpg" alt="Frankie">
+            <h3>Frankie</h3>
+            <p>Tasty and filling.</p>
+            <button class="btn" onclick="placeOrder('Frankie')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/noodles.jpg" alt="Noodles">
+            <h3>Noodles</h3>
+            <p>Delicious noodles.</p>
+            <button class="btn" onclick="placeOrder('Noodles')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/vadapav.jpg" alt="Vada Pav">
+            <h3>Vada Pav</h3>
+            <p>Price: ₹20</p>
+            <button class="btn" onclick="placeOrder('Vada Pav')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/pavbhaji.jpg" alt="Pav Bhaji">
+            <h3>Pav Bhaji</h3>
+            <p>Price: ₹100</p>
+            <button class="btn" onclick="placeOrder('Pav Bhaji')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/frenchfries.jpg" alt="French Fries">
+            <h3>French Fries</h3>
+            <p>Price: ₹70</p>
+            <button class="btn" onclick="placeOrder('French Fries')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/momos.jpg" alt="Veg Momos">
+            <h3>Veg Momos</h3>
+            <p>Price: ₹80</p>
+            <button class="btn" onclick="placeOrder('Veg Momos')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/pasta.jpg" alt="White Sauce Pasta">
+            <h3>White Sauce Pasta</h3>
+            <p>Price: ₹120</p>
+            <button class="btn" onclick="placeOrder('White Sauce Pasta')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/coldcoffee.jpg" alt="Cold Coffee">
+            <h3>Cold Coffee</h3>
+            <p>Price: ₹60</p>
+            <button class="btn" onclick="placeOrder('Cold Coffee')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/paneer-roll.jpg" alt="Paneer Roll">
+            <h3>Paneer Roll</h3>
+            <p>Price: ₹100</p>
+            <button class="btn" onclick="placeOrder('Paneer Roll')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/cheeseburger.jpg" alt="Cheese Burger">
+            <h3>Cheese Burger</h3>
+            <p>Price: ₹120</p>
+            <button class="btn" onclick="placeOrder('Cheese Burger')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/cheesepizza.jpg" alt="Cheese Pizza">
+            <h3>Cheese Pizza</h3>
+            <p>Price: ₹150</p>
+            <button class="btn" onclick="placeOrder('Cheese Pizza')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/garlicbread.jpg" alt="Garlic Bread">
+            <h3>Garlic Bread</h3>
+            <p>Price: ₹90</p>
+            <button class="btn" onclick="placeOrder('Garlic Bread')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/samosa.jpg" alt="Samosa">
+            <h3>Samosa</h3>
+            <p>Price: ₹20</p>
+            <button class="btn" onclick="placeOrder('Samosa')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/onionrings.jpg" alt="Onion Rings">
+            <h3>Onion Rings</h3>
+            <p>Price: ₹80</p>
+            <button class="btn" onclick="placeOrder('Onion Rings')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/chocolateshake.jpg" alt="Chocolate Shake">
+            <h3>Chocolate Shake</h3>
+            <p>Price: ₹100</p>
+            <button class="btn" onclick="placeOrder('Chocolate Shake')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/masaladosa.jpg" alt="Masala Dosa">
+            <h3>Masala Dosa</h3>
+            <p>Price: ₹90</p>
+            <button class="btn" onclick="placeOrder('Masala Dosa')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/cholebhature.jpg" alt="Chole Bhature">
+            <h3>Chole Bhature</h3>
+            <p>Price: ₹120</p>
+            <button class="btn" onclick="placeOrder('Chole Bhature')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/springroll.jpg" alt="Veg Spring Roll">
+            <h3>Veg Spring Roll</h3>
+            <p>Price: ₹90</p>
+            <button class="btn" onclick="placeOrder('Veg Spring Roll')">Order Now</button>
+        </div>
+
+        <div class="food-item">
+            <img src="images/brownie.jpg" alt="Chocolate Brownie">
+            <h3>Chocolate Brownie</h3>
+            <p>Price: ₹80</p>
+            <button class="btn" onclick="placeOrder('Chocolate Brownie')">Order Now</button>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <p>2026 Shree Fast Food. All Rights Reserved.</p>
+</footer>
+
+<script>
+function placeOrder(itemName) {
+    alert("Your order for " + itemName +
+          " has been placed successfully!");
+}
+</script>
+
+</body>
+</html>
+```
